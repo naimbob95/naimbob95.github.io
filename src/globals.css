@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 213 31% 91%;
+    --card: 223 47% 14%;
+    --card-foreground: 213 31% 91%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20% 95%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222 47% 11%;
+    --secondary: 222 47% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 223 47% 18%;
+    --muted-foreground: 215 20% 70%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+    --ring: 224 76% 48%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .btn-hover {
+    @apply transition-all duration-200 ease-in-out hover:scale-105 active:scale-95;
+  }
+  
+  .btn-primary {
+    @apply bg-accent text-accent-foreground hover:bg-accent/90;
+  }
+  
+  .btn-outline {
+    @apply border border-border text-foreground hover:bg-accent hover:text-accent-foreground;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 text-transparent bg-clip-text;
+  }
+
+  .card-gradient {
+    @apply bg-gradient-to-b from-card/80 to-card;
+  }
+}
+
+/* Custom background effects */
+.bg-dark-pattern {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 50px 50px;
+}
+
+.glow {
+  box-shadow: 0 0 30px -10px rgba(66, 153, 225, 0.3);
+}

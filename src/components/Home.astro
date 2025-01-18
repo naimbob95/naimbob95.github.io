@@ -1,0 +1,287 @@
+---
+import { Button } from "@/components/ui/button"
+import { Card, CardHeader, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
+import { Github, Linkedin, Mail } from "lucide-react"
+---
+
+<div class="container px-4 py-2 mx-auto max-w-6xl">
+    <header class="fixed top-0 left-0 right-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <nav class="container flex items-center justify-center px-4 py-3 mx-auto max-w-6xl overflow-x-auto">
+            <div class="flex items-center gap-6 md:gap-12">
+                {["about", "experience", "education", "skills"].map((item) => (
+                    <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        asChild 
+                        className="hover:bg-muted hover:text-accent transition-colors duration-200 min-w-fit"
+                    >
+                        <a href={`#${item}`} class="text-xs md:text-sm font-medium tracking-wide uppercase whitespace-nowrap">
+                            {item}
+                        </a>
+                    </Button>
+                ))}
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-14">
+        <section id="about" class="py-2 md:py-6">
+            <div class="p-4 card-gradient glow border-accent/10">
+                <div class="flex flex-col items-center text-center space-y-3 md:space-y-4">
+                    <div class="rounded-full bg-muted/50 p-2 ring-1 ring-accent/20">
+                        <img
+                            src="your-photo-url.jpg"
+                            alt="Profile"
+                            class="rounded-full w-32 h-32 object-cover"
+                        />
+                    </div>
+                    <div class="space-y-1 md:space-y-2">
+                        <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight gradient-text">
+                            Amirul Naim Bin Ahmad Nazri
+                        </h1>
+                        <h2 class="text-base md:text-lg text-accent font-medium">Software Developer</h2>
+                    </div>
+                    <p class="max-w-[600px] text-muted-foreground text-sm md:text-base">
+                        Passionate about creating elegant solutions to complex problems.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-2 md:gap-3 pt-3">
+                        <Button 
+                            variant="outline" 
+                            className="btn-hover btn-outline w-full sm:w-auto"
+                        >
+                            <Github className="mr-2 h-4 w-4" /> GitHub
+                        </Button>
+                        <Button 
+                            variant="outline" 
+                            className="btn-hover btn-outline w-full sm:w-auto"
+                        >
+                            <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <Separator className="my-1 md:my-2 opacity-20" />
+
+        <section id="experience" class="min-h-[65vh] py-1 md:py-2 flex flex-col">
+            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-2 text-center">Work Experience</h2>
+            <div class="flex-grow">
+                <Card className="card-gradient border-accent/10 h-full">
+                    <div class="relative p-4">
+                        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-accent/30 transform -translate-x-1/2"></div>
+                        
+                        <div class="grid grid-cols-1 gap-8">
+                            <!-- Right timeline item -->
+                            <div class="relative flex items-center opacity-0 timeline-item">
+                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
+                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                </div>
+                                <div class="w-1/2">
+                                    <!-- Empty for right alignment -->
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="flex flex-col">
+                                        <h3 class="text-lg font-semibold">Senior Developer</h3>
+                                        <p class="text-sm text-muted-foreground">Company Name • 2022 - Present</p>
+                                        <Badge variant="secondary" className="w-fit mt-2">Full-time</Badge>
+                                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                                            <li>• Led development of key features resulting in 40% user growth</li>
+                                            <li>• Managed team of 5 developers across multiple projects</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left timeline item -->
+                            <div class="relative flex items-center opacity-0 timeline-item">
+                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
+                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                </div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <div class="flex flex-col items-end">
+                                        <h3 class="text-lg font-semibold">Full Stack Developer</h3>
+                                        <p class="text-sm text-muted-foreground">Previous Company • 2020 - 2022</p>
+                                        <Badge variant="secondary" className="w-fit mt-2">Full-time</Badge>
+                                        <ul class="mt-2 text-sm text-muted-foreground space-y-1 text-right">
+                                            <li>• Developed and maintained multiple web applications</li>
+                                            <li>• Implemented CI/CD pipelines reducing deployment time by 50%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="w-1/2">
+                                    <!-- Empty for left alignment -->
+                                </div>
+                            </div>
+
+                            <!-- Right timeline item -->
+                            <div class="relative flex items-center opacity-0 timeline-item">
+                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
+                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                </div>
+                                <div class="w-1/2">
+                                    <!-- Empty for right alignment -->
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="flex flex-col">
+                                        <h3 class="text-lg font-semibold">Junior Developer</h3>
+                                        <p class="text-sm text-muted-foreground">First Company • 2018 - 2020</p>
+                                        <Badge variant="secondary" className="w-fit mt-2">Full-time</Badge>
+                                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                                            <li>• Built and maintained customer-facing applications</li>
+                                            <li>• Collaborated with design team on UI/UX improvements</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Card>
+            </div>
+        </section>
+
+        <section id="education" class="min-h-[35vh] py-1 md:py-2 flex flex-col">
+            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-2 text-center">Education</h2>
+            <div class="flex-grow">
+                <Card className="card-gradient border-accent/10 h-full">
+                    <div class="relative p-4">
+                        <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-accent/30 transform -translate-x-1/2"></div>
+                        
+                        <div class="grid grid-cols-1 gap-8">
+                            <!-- Right timeline item -->
+                            <div class="relative flex items-center opacity-0 timeline-item">
+                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
+                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                </div>
+                                <div class="w-1/2">
+                                    <!-- Empty for right alignment -->
+                                </div>
+                                <div class="w-1/2 pl-8">
+                                    <div class="flex flex-col">
+                                        <h3 class="text-lg font-semibold">Master of Computer Science</h3>
+                                        <p class="text-sm text-muted-foreground">University Name • 2020 - 2022</p>
+                                        <p class="text-sm text-muted-foreground mt-1">Specialization in AI & Machine Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left timeline item -->
+                            <div class="relative flex items-center opacity-0 timeline-item">
+                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
+                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                </div>
+                                <div class="w-1/2 pr-8 text-right">
+                                    <div class="flex flex-col items-end">
+                                        <h3 class="text-lg font-semibold">Bachelor of Computer Science</h3>
+                                        <p class="text-sm text-muted-foreground">University Name • 2016 - 2020</p>
+                                        <p class="text-sm text-muted-foreground mt-1">Major in Software Engineering</p>
+                                    </div>
+                                </div>
+                                <div class="w-1/2">
+                                    <!-- Empty for left alignment -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Card>
+            </div>
+        </section>
+
+        <section id="skills" class="py-1 md:py-2">
+            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-2 ">Skills</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <Card className="card-gradient border-accent/10">
+                    <CardHeader className="p-2 md:p-3">
+                        <h3 class="text-base md:text-lg font-semibold">Languages</h3>
+                    </CardHeader>
+                    <CardContent className="p-2 md:p-3 pt-0">
+                        <div class="flex flex-wrap gap-2">
+                            {["JavaScript", "TypeScript", "Python", "Java"].map((skill) => (
+                                <Badge variant="outline">{skill}</Badge>
+                            ))}
+                        </div>
+                    </CardContent>
+                </Card>
+                <Card className="card-gradient border-accent/10">
+                    <CardHeader className="p-2 md:p-3">
+                        <h3 class="text-base md:text-lg font-semibold">Technologies</h3>
+                    </CardHeader>
+                    <CardContent className="p-2 md:p-3 pt-0">
+                        <div class="flex flex-wrap gap-2">
+                            {["React", "Node.js", "Next.js", "PostgreSQL", "Docker"].map((skill) => (
+                                <Badge variant="outline">{skill}</Badge>
+                            ))}
+                        </div>
+                    </CardContent>
+                </Card>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script>
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-timeline-item');
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.timeline-item').forEach((item) => {
+        observer.observe(item);
+    });
+</script>
+
+<style>
+    .animate-timeline-item {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .timeline-item {
+        transition: all 0.3s ease;
+    }
+
+    .glass-effect {
+        backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+        .timeline-item {
+            flex-direction: column;
+        }
+        
+        .timeline-item > div {
+            width: 100% !important;
+            text-align: left !important;
+            padding: 0 0 0 2rem !important;
+        }
+
+        .timeline-item .flex-col {
+            align-items: flex-start !important;
+        }
+
+        .timeline-item ul {
+            text-align: left !important;
+        }
+    }
+</style>
