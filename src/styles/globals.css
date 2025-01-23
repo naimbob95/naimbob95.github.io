@@ -6,11 +6,20 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
+    --font-mono: 'JetBrains Mono', monospace;
   }
 
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
+  }
+
+  html {
+    font-family: var(--font-mono);
+  }
+
+  code {
+    font-family: var(--font-mono);
   }
 }
 
