@@ -6,7 +6,6 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
-    --font-mono: 'JetBrains Mono', monospace;
   }
 
   .dark {
@@ -15,11 +14,11 @@
   }
 
   html {
-    font-family: var(--font-mono);
+    font-family: 'Inter', sans-serif;
   }
 
   code {
-    font-family: var(--font-mono);
+    font-family: 'Inter', sans-serif;
   }
 }
 
