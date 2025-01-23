@@ -78,6 +78,69 @@ import { buttonVariants } from "@/components/ui/button"
             <div class="space-y-4 card-spacing">
                 <div class="card-gradient p-4 rounded-lg shadow-soft">
                     <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">
+                            Software Engineer</h3>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                            <p>BrioHR</p>
+                            <span>•</span>
+                            <p>Dec 2023 - Present</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            {["Typescript", "NestJs", "Microservices", "Angular", "Mongodb","Docker"].map((tech) => (
+                                <Badge 
+                                    variant="outline" 
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                                >
+                                    {tech}
+                                </Badge>
+                            ))}
+                        </div>
+                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                            <li>• Contributed to maintaining the HR system across a microservices architecture using Nest.js, Angular, and MongoDB, ensuring scalability and performance.</li>
+                            <li>• Enhanced the recruitment module by transforming the approval process from a single-layer to a dynamic multi-layer approval system, improving flexibility and compliance. Additionally, implemented unit tests using Jest to ensure robustness and reliability.</li>
+                            <li>• Participated in the development of the time-attendance module using hexagonal architecture by implementing dynamic policy configurations to accommodate diverse organizational requirements, along with comprehensive Jest unit tests to validate functionality.</li>
+                            <li>• Learned and implemented Domain-Driven Development (DDD) principles across the project to create a more maintainable and scalable codebase by aligning technical implementations with business needs.</li>
+                            <li>• Collaborated with cross-functional teams to optimize microservice interactions, improving data consistency and reducing system downtime.</li>
+                            <li>• Conducted performance tuning and optimization of MongoDB queries to enhance system responsiveness, incorporating unit tests to validate query accuracy and efficiency.</li>
+                            <li>• Developed and maintained RESTful APIs to facilitate seamless communication between microservices and front-end applications, with Jest tests ensuring API stability and correctness.</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+         
+            <div class="space-y-4 card-spacing">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">
+                            Web Developer</h3>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                            <p>Boneybone Ventures Sdn Bhd</p>
+                            <span>•</span>
+                            <p>Aug 2021 - Dec 2023</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            {["Laravel", "Vue.Js", "Microservices", "Mysql", "AWS","Runcloud"].map((tech) => (
+                                <Badge 
+                                    variant="outline" 
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                                >
+                                    {tech}
+                                </Badge>
+                            ))}
+                        </div>
+                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                            <li>• Utilized expertise in Laravel PHP, Vue.js, and MySQL to make significant contributions to the development of an ERP system consisting of PMO, CRM, BC, and HRMS modules.</li>
+                            <li>• Deployed web systems on AWS EC2 and DigitalOcean droplets, ensuring high availability, scalability, and fault tolerance for clients.</li>
+                            <li>• Effectively utilize Runcloud to efficiently manage the application and server, ensuring optimal performance, security, and smooth operations.</li>
+                            <li>• Designed and developed a dashboard that effectively displays sales and project data using Laravel, MySQL, and Vue.js.</li>
+                            <li>• Led a team of developers in developing and maintaining the system and utilizing Jira for streamlined project management and efficient workflow to ensure timely delivery of high-quality software.</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+            <div class="space-y-4 card-spacing">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
                         <h3 class="text-lg font-semibold">Technical Team Lead</h3>
                         <div class="flex items-center gap-2 text-sm text-muted-foreground">
                             <p>PRIMALCOM ENTEPRISE SDN BHD</p>
@@ -88,7 +151,7 @@ import { buttonVariants } from "@/components/ui/button"
                             {["Python", "Node.Js", "Flask", "MongoDB", "AWS"].map((tech) => (
                                 <Badge 
                                     variant="outline" 
-                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
                                 >
                                     {tech}
                                 </Badge>
@@ -104,7 +167,7 @@ import { buttonVariants } from "@/components/ui/button"
                         </ul>
                     </div>
                 </div>
-    </div>
+        </div>
       <div class="space-y-4 card-spacing">
                 <div class="card-gradient p-4 rounded-lg shadow-soft">
                     <div class="flex flex-col">
@@ -118,7 +181,7 @@ import { buttonVariants } from "@/components/ui/button"
                             {["Laravel", "Linux", "MySQL", "IPFS", "Node.Js"].map((tech) => (
                                 <Badge 
                                     variant="outline" 
-                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
                                 >
                                     {tech}
                                 </Badge>
@@ -149,7 +212,7 @@ import { buttonVariants } from "@/components/ui/button"
                             {["Laravel", "Vue.js", "MySQL", "WordPress"].map((tech) => (
                                 <Badge 
                                     variant="outline" 
-                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
                                 >
                                     {tech}
                                 </Badge>
@@ -167,30 +230,29 @@ import { buttonVariants } from "@/components/ui/button"
     
         <section id="education" class="py-1 md:py-2">
             <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Education</h2>
-            <div class="space-y-4 card-spacing">
+            <div class="space-y-4">
                 <div class="card-gradient p-4 rounded-lg shadow-soft">
                     <div class="flex flex-col">
                         <h3 class="text-lg font-semibold">Bachelor of Computer Science (Software Engineering)</h3>
-                            <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                                <p>Universiti Teknologi Malaysia</p>
-                                <span>•</span>
-                                <p>2016 - 2020</p>
-                            </div>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                            <p>Universiti Teknologi Malaysia</p>
+                            <span>•</span>
+                            <p>2016 - 2020</p>
+                        </div>
                         <p class="text-sm text-muted-foreground mt-1">Major in Software Engineering</p>
                     </div>
                 </div>
-                <div class="space-y-3 card-spacing">
+        
                 <div class="card-gradient p-4 rounded-lg shadow-soft">
                     <div class="flex flex-col">
                         <h3 class="text-lg font-semibold">Diploma in Information Technology (Programming)</h3>
                         <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                        <p>Politeknik Balik Pulau</p>
-                        <span>•</span>
-                        <p>2013 - 2016</p>
+                            <p>Politeknik Balik Pulau</p>
+                            <span>•</span>
+                            <p>2013 - 2016</p>
                         </div>  
                         <p class="text-sm text-muted-foreground mt-1">Major in Programming</p>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
@@ -201,17 +263,57 @@ import { buttonVariants } from "@/components/ui/button"
                 <div class="card-gradient p-4 dotted-border">
                     <h3 class="text-base md:text-lg font-semibold mb-2">Languages</h3>
                     <div class="flex flex-wrap gap-2">
-                        {["JavaScript", "TypeScript", "Python", "Java"].map((skill) => (
-                            <Badge variant="outline" className="dotted-border">{skill}</Badge>
+                        {["JavaScript", "TypeScript", "PHP", "Python"].map((skill) => (
+                            <Badge 
+                                variant="outline" 
+                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                            >
+                                {skill}
+                            </Badge>
                         ))}
                     </div>
                 </div>
                 <div class="card-gradient p-4 dotted-border">
                     <h3 class="text-base md:text-lg font-semibold mb-2">Technologies</h3>
                     <div class="flex flex-wrap gap-2">
-                        {["React", "Node.js", "Next.js", "PostgreSQL", "Docker"].map((skill) => (
-                            <Badge variant="outline" className="dotted-border">{skill}</Badge>
+                        {["Angular", "Vue.Js", "Node.js", "Nest.Js", "PostgreSQL", "Docker","Laravel"].map((skill) => (
+                            <Badge 
+                                variant="outline" 
+                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                            >
+                                {skill}
+                            </Badge>
                         ))}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="py-1 md:py-2">
+            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Certificates</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col space-y-4">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold">
+                                
+                                    AWS Certified Cloud Practitioner
+                              
+                            </h3>
+                            <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                                <p>Amazon Web Services (AWS)</p>
+                                <span>•</span>
+                                <p>2023 - 2026</p>
+                            </div>
+                            <a  
+                            href="https://www.credly.com/badges/c780afc4-183e-4ef7-8bb3-a7bd9c77da06/linked_in_profile"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-sm font-medium text-muted-foreground hover:text-accent underline-offset-4 hover:underline transition-all duration-200"
+                        >
+                            View Credential →
+                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -395,6 +497,13 @@ import { buttonVariants } from "@/components/ui/button"
             0 4px 8px rgba(0, 0, 0, 0.1),
             inset 0 0 0 1px rgba(255, 255, 255, 0.1);
         transform: translateY(-2px);
+    }
+</style>
+
+<!-- Add this to the head of your document or in a global style file -->
+<style is:global>
+    :root {
+        --accent-color: 59, 130, 246; /* RGB values for your accent color */
     }
 </style>
 
