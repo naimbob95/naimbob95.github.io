@@ -73,254 +73,124 @@ import { buttonVariants } from "@/components/ui/button"
             </div>
         </section>
 
-        
-
-        <section id="experience" class="min-h-[65vh] py-1 md:py-2 flex flex-col">
-            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-2 text-center">Work Experience</h2>
-            <div class="flex-grow">
-                <div class="card-gradient h-full p-4">
-                    <div class="relative">
-                        <div class="absolute left-1/2 top-0 bottom-0 dotted-border-left transform -translate-x-1/2"></div>
-                        
-                        <div class="grid grid-cols-1 gap-8">
-                            <!-- Right timeline item -->
-                            <div class="relative flex items-center opacity-0 timeline-item">
-                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
-                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
-                                </div>
-                                <div class="w-1/2">
-                                    <!-- Empty for right alignment -->
-                                </div>
-                                <div class="w-1/2 pl-8">
-                                    <div class="flex flex-col">
-                                        <h3 class="text-lg font-semibold">Technical Team Lead</h3>
-                                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                                            <p>PRIMALCOM ENTEPRISE SDN BHD
-                                            </p>
-                                            <span>•</span>
-                                            <p>Sept 2020 - Apr 2021</p>
-                                            </div>  
-                                            <div class="flex flex-wrap gap-2 mt-2">
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    Python
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    Node.Js
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    Flask
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                  MongoDb
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    AWS
-                                                </Badge>
-                                                <Badge 
-                                                variant="outline" 
-                                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                            >
-                                                AWS
-                                            </Badge>
-                                            </div>
-                                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
-                                            <li>• Led the team in system development and technical support, ensuring seamless operation and high customer satisfaction.</li>
-                                            <li>• Developed and maintained Rest API using Node.js with PM2 process manager.</li>
-                                            <li>• Collected raw sales and inventory data, conducted data cleaning, and analysis using Python.
-                                            </li>
-                                            <li>• Developed modules for an e-commerce fulfillment system using Python Flask microservice for backend, HTML/CSS/Javascript for frontend, and MongoDB and MYSQL for database.</li>
-                                            <li>• Deployed web system on AWS servers using Nginx for optimal performance and high availability.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <!-- Left timeline item -->
-                            <div class="relative flex items-center opacity-0 timeline-item">
-                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
-                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
-                                </div>
-                                <div class="w-1/2 pr-8 text-right">
-                                    <div class="flex flex-col items-end">
-                                        <h3 class="text-lg font-semibold">Analyst Programmer
-                                        </h3>
-                                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                                            <p>SERBA DINAMIK IT SOLUTIONS SDN BHD
-                                            </p>
-                                            <span>•</span>
-                                            <p>Apr 2020 - Sept 2020</p>
-                                            </div>  
-                                            <div class="flex flex-wrap gap-2 mt-2">
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    Laravel
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    Linux
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    MySQL
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    IPFS
-                                                </Badge>
-                                                <Badge 
-                                                    variant="outline" 
-                                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                                >
-                                                    Node.Js
-                                                </Badge>
-                                            </div>      
-                                        <ul class="mt-2 text-sm text-muted-foreground space-y-1 text-left">
-                                            <li>• Worked with Laravel in the process of writing the code, ultimately resulting in a completed program.</li>
-                                            <li>• Developed mobile applications within 3 months using an ionic framework.</li>
-                                            <li>• Implemented the interplanetary file system(IPFS) for secure file storage in the system.
-                                            </li>
-                                            <li>• Pickup node.js and develop web API using node.js within 3 months.
-                                            </li>
-                                            <li>• Deployed the web system on the server using Nginx and apache with Ubuntu.
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="w-1/2">
-                                    <!-- Empty for left alignment -->
-                                </div>
-                            </div>
-        
-                            <!-- Right timeline item -->
-                            <div class="relative flex items-center opacity-0 timeline-item">
-                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
-                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
-                                </div>
-                                <div class="w-1/2">
-                                    <!-- Empty for right alignment -->
-                                </div>
-                                <div class="w-1/2 pl-8">
-                                    <div class="flex flex-col">
-                                        <h3 class="text-lg font-semibold">Web Developer Intern</h3>
-                                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                                            <p>COOL CODE SDN BHD</p>
-                                            <span>•</span>
-                                            <p>Sept 2018 - Jan 2019</p>
-                                            </div>  
-                                            <div class="flex flex-wrap gap-2 mt-2">
-                                                <Badge 
-                                                variant="outline" 
-                                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                            >
-                                                Laravel
-                                            </Badge>
-                                            <Badge 
-                                                variant="outline" 
-                                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                            >
-                                                Vue.js
-                                            </Badge>
-                                            <Badge 
-                                                variant="outline" 
-                                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                            >
-                                                MySQL
-                                            </Badge>                                        
-                                            <Badge 
-                                                variant="outline" 
-                                                className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
-                                            >
-                                                WordPress
-                                            </Badge>
-                                            </div>                                        
-                                            <ul class="mt-2 text-sm text-muted-foreground space-y-1">
-                                            <li>• Developed a web system using Laravel as the backend with Blade, Sass, and Vue.js for the frontend, and MySQL as the database.</li>
-                                            <li>• Created and validated a software requirements specification and performed user acceptance testing.</li>
-                                            <li>• Revamp and manage the company website using Wordpress.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+        <section id="experience" class="py-1 md:py-2">
+            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Work Experience</h2>
+            <div class="space-y-4 card-spacing">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Technical Team Lead</h3>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                            <p>PRIMALCOM ENTEPRISE SDN BHD</p>
+                            <span>•</span>
+                            <p>Sept 2020 - Apr 2021</p>
                         </div>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            {["Python", "Node.Js", "Flask", "MongoDB", "AWS"].map((tech) => (
+                                <Badge 
+                                    variant="outline" 
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
+                                >
+                                    {tech}
+                                </Badge>
+                            ))}
+                        </div>
+                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                            <li>• Led the team in system development and technical support, ensuring seamless operation and high customer satisfaction.</li>
+                            <li>• Developed and maintained Rest API using Node.js with PM2 process manager.</li>
+                            <li>• Collected raw sales and inventory data, conducted data cleaning, and analysis using Python.
+                            </li>
+                            <li>• Developed modules for an e-commerce fulfillment system using Python Flask microservice for backend, HTML/CSS/Javascript for frontend, and MongoDB and MYSQL for database.</li>
+                            <li>• Deployed web system on AWS servers using Nginx for optimal performance and high availability.</li>
+                        </ul>
+                    </div>
+                </div>
+    </div>
+      <div class="space-y-4 card-spacing">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Analyst Programmer</h3>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                            <p>SERBA DINAMIK IT SOLUTIONS SDN BHD</p>
+                            <span>•</span>
+                            <p>Apr 2020 - Sept 2020</p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            {["Laravel", "Linux", "MySQL", "IPFS", "Node.Js"].map((tech) => (
+                                <Badge 
+                                    variant="outline" 
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
+                                >
+                                    {tech}
+                                </Badge>
+                            ))}
+                        </div>
+                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                            <li>• Worked with Laravel in the process of writing the code, ultimately resulting in a completed program.</li>
+                            <li>• Developed mobile applications within 3 months using an ionic framework.</li>
+                            <li>• Implemented the interplanetary file system(IPFS) for secure file storage in the system.
+                            </li>
+                            <li>• Pickup node.js and develop web API using node.js within 3 months.
+                            </li>
+                            <li>• Deployed the web system on the server using Nginx and apache with Ubuntu.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="education" class="min-h-[35vh] py-1 md:py-2 flex flex-col">
-            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-2 text-center">Education</h2>
-            <div class="flex-grow">
-                <div class="card-gradient h-full p-4">
-                    <div class="relative">
-                        <div class="absolute left-1/2 top-0 bottom-0 dotted-border-left transform -translate-x-1/2"></div>
-                        
-                        <div class="grid grid-cols-1 gap-8">
-                            <!-- Right timeline item -->
-                            <div class="relative flex items-center opacity-0 timeline-item">
-                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
-                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
-                                </div>
-                                <div class="w-1/2">
-                                    <!-- Empty for right alignment -->
-                                </div>
-                                <div class="w-1/2 pl-8">
-                                    <div class="flex flex-col">
-                                        <h3 class="text-lg font-semibold">Bachelor of Computer Science (Software Engineering)</h3>
-                                            <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <p>Universiti Teknologi Malaysia</p>
-                                                <span>•</span>
-                                                <p>2016 - 2020</p>
-                                            </div>
-                                        <p class="text-sm text-muted-foreground mt-1">Major in Software Engineering</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Left timeline item -->
-                            <div class="relative flex items-center opacity-0 timeline-item">
-                                <div class="absolute left-1/2 flex items-center justify-center w-10 h-10 rounded-full border-2 border-accent/50 bg-background transform -translate-x-1/2">
-                                    <div class="w-3 h-3 bg-accent rounded-full"></div>
-                                </div>
-                                <div class="w-1/2 pr-8 text-right">
-                                    <div class="flex flex-col items-end">
-                                        <h3 class="text-lg font-semibold">Diploma in Information Technology (Programming)                                        </h3>
-                                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                                        <p>Politeknik Balik Pulau</p>
-                                        <span>•</span>
-                                        <p>2013 - 2016</p>
-                                        </div>  
-                                        <p class="text-sm text-muted-foreground mt-1">Major in Programming</p>
-                                    </div>
-                                </div>
-                                <div class="w-1/2">
-                                    <!-- Empty for left alignment -->
-                                </div>
-                            </div>
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Web Developer Intern</h3>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                            <p>COOL CODE SDN BHD</p>
+                            <span>•</span>
+                            <p>Sept 2018 - Jan 2019</p>
                         </div>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            {["Laravel", "Vue.js", "MySQL", "WordPress"].map((tech) => (
+                                <Badge 
+                                    variant="outline" 
+                                    className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-sm cursor-pointer"
+                                >
+                                    {tech}
+                                </Badge>
+                            ))}
+                        </div>
+                        <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                            <li>• Developed a web system using Laravel as the backend with Blade, Sass, and Vue.js for the frontend, and MySQL as the database.</li>
+                            <li>• Created and validated a software requirements specification and performed user acceptance testing.</li>
+                            <li>• Revamp and manage the company website using Wordpress.</li>
+                        </ul>
                     </div>
+                </div>
+           
+        </section>
+    
+        <section id="education" class="py-1 md:py-2">
+            <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Education</h2>
+            <div class="space-y-4 card-spacing">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Bachelor of Computer Science (Software Engineering)</h3>
+                            <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                                <p>Universiti Teknologi Malaysia</p>
+                                <span>•</span>
+                                <p>2016 - 2020</p>
+                            </div>
+                        <p class="text-sm text-muted-foreground mt-1">Major in Software Engineering</p>
+                    </div>
+                </div>
+                <div class="space-y-3 card-spacing">
+                <div class="card-gradient p-4 rounded-lg shadow-soft">
+                    <div class="flex flex-col">
+                        <h3 class="text-lg font-semibold">Diploma in Information Technology (Programming)</h3>
+                        <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                        <p>Politeknik Balik Pulau</p>
+                        <span>•</span>
+                        <p>2013 - 2016</p>
+                        </div>  
+                        <p class="text-sm text-muted-foreground mt-1">Major in Programming</p>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
@@ -438,5 +308,99 @@ import { buttonVariants } from "@/components/ui/button"
         background-image: radial-gradient(circle, rgb(59, 130, 246, 0.5) 33%, rgba(255,255,255,0) 0%);
         background-size: 4px 4px;
         transition: all 0.3s ease;
+    }
+
+    .card-gradient {
+        position: relative;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+        margin-bottom: 1.5rem;
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 4px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        border: none;  /* Remove border */
+    }
+    
+    .card-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 
+            0 8px 20px rgba(0, 0, 0, 0.15),
+            0 4px 8px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Update spacing utility class without border */
+    .card-spacing > * + * {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.03);
+    }
+
+    /* Update dotted-border class to use shadows instead */
+    .dotted-border {
+        position: relative;
+        background: rgba(255, 255, 255, 0.01);
+        border-radius: 1.5rem;
+        border: none;
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
+
+    /* Add spacing utility class */
+    .card-spacing > * + * {
+        margin-top: 2rem;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.05);
+        padding-top: 2rem;
+    }
+
+    /* Update existing dotted-border class */
+    .dotted-border {
+        position: relative;
+        background: rgba(255, 255, 255, 0.01);
+        border-radius: 1rem;
+        border: none;
+    }
+    
+    .dotted-border::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        border-radius: 1rem;
+        padding: 1px;
+        background: 
+            linear-gradient(90deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-x,
+            linear-gradient(90deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-x,
+            linear-gradient(0deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-y,
+            linear-gradient(0deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-y;
+        background-size: 8px 1px, 8px 1px, 1px 8px, 1px 8px;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+        pointer-events: none;
+    }
+
+    .shadow-soft {
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 4px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease;
+    }
+
+    .shadow-soft:hover {
+        box-shadow: 
+            0 8px 20px rgba(0, 0, 0, 0.15),
+            0 4px 8px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+    }
+</style>
+
+<!-- Add this to the head of your document or in a global style file -->
+<style is:global>
+    :root {
+        --accent-color: 59, 130, 246; /* RGB values for your accent color */
     }
 </style>
