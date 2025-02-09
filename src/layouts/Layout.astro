@@ -24,6 +24,180 @@ import '../styles/globals.css'
 	</body>
 </html>
 
+
+<style is:global>
+    .animate-timeline-item {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .timeline-item {
+        transition: all 0.3s ease;
+    }
+
+    .glass-effect {
+        backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+        .timeline-item {
+            flex-direction: column;
+        }
+        
+        .timeline-item > div {
+            width: 100% !important;
+            text-align: left !important;
+            padding: 0 0 0 2rem !important;
+        }
+
+        .timeline-item .flex-col {
+            align-items: flex-start !important;
+        }
+
+        .timeline-item ul {
+            text-align: left !important;
+        }
+
+        /* New mobile styles for timeline dots */
+        .timeline-item .w-10.h-10 {
+            width: 1.5rem !important;
+            height: 1.5rem !important;
+            left: 0 !important;
+            transform: translateX(-50%) !important;
+        }
+
+        .timeline-item .w-3.h-3 {
+            width: 0.5rem !important;
+            height: 0.5rem !important;
+        }
+
+        /* Adjust the vertical line for mobile */
+        .dotted-border-left {
+            left: 0 !important;
+            transform: translateX(-50%) !important;
+        }
+    }
+
+    .timeline-item .w-10.h-10 {
+        border: none;
+        background-image: radial-gradient(circle, rgb(59, 130, 246, 0.5) 33%, rgba(255,255,255,0) 0%);
+        background-size: 4px 4px;
+        transition: all 0.3s ease;
+    }
+
+    .card-gradient {
+        position: relative;
+        background: rgba(255, 255, 255, 0.02);
+        border-radius: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+        margin-bottom: 1.5rem;
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 4px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        border: none;  /* Remove border */
+    }
+    
+    .card-gradient:hover {
+        transform: translateY(-2px);
+        box-shadow: 
+            0 8px 20px rgba(0, 0, 0, 0.15),
+            0 4px 8px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Update spacing utility class without border */
+    .card-spacing > * + * {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.03);
+    }
+
+    /* Update dotted-border class to use shadows instead */
+    .dotted-border {
+        position: relative;
+        background: rgba(255, 255, 255, 0.01);
+        border-radius: 1.5rem;
+        border: none;
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    }
+
+    /* Add spacing utility class */
+    .card-spacing > * + * {
+        margin-top: 2rem;
+        box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.05);
+        padding-top: 2rem;
+    }
+
+    /* Update existing dotted-border class */
+    .dotted-border {
+        position: relative;
+        background: rgba(255, 255, 255, 0.01);
+        border-radius: 1rem;
+        border: none;
+    }
+    
+    .dotted-border::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        border-radius: 1rem;
+        padding: 1px;
+        background: 
+            linear-gradient(90deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-x,
+            linear-gradient(90deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-x,
+            linear-gradient(0deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-y,
+            linear-gradient(0deg, rgba(255,255,255,0.1) 50%, transparent 50%) repeat-y;
+        background-size: 8px 1px, 8px 1px, 1px 8px, 1px 8px;
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+        pointer-events: none;
+    }
+
+    .shadow-soft {
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.1),
+            0 2px 4px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease;
+    }
+
+    .shadow-soft:hover {
+        box-shadow: 
+            0 8px 20px rgba(0, 0, 0, 0.15),
+            0 4px 8px rgba(0, 0, 0, 0.1),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px);
+    }
+</style>
+
+<!-- Add this to the head of your document or in a global style file -->
+<style is:global>
+    :root {
+        --accent-color: 59, 130, 246; /* RGB values for your accent color */
+    }
+</style>
+
+<!-- Add this to the head of your document or in a global style file -->
+<style is:global>
+    :root {
+        --accent-color: 59, 130, 246; /* RGB values for your accent color */
+    }
+</style>
 <style is:global>
 	::selection {
 		background: rgba(66, 153, 225, 0.3);

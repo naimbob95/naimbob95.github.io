@@ -1,0 +1,158 @@
+---
+import { Badge } from "@/components/ui/badge"
+---
+
+<section id="experience" class="py-1 md:py-2">
+    <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Work Experience</h2>
+    <div class="space-y-4 card-spacing">
+        <div class="card-gradient p-4 rounded-lg shadow-soft">
+            <div class="flex flex-col">
+                <h3 class="text-lg font-semibold">
+                    Software Engineer</h3>
+                <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                    <p>BrioHR</p>
+                    <span>•</span>
+                    <p>Dec 2023 - Present</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    {["Typescript", "NestJs", "Microservices", "Angular", "Mongodb","Docker"].map((tech) => (
+                        <Badge 
+                            variant="outline" 
+                            className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                        >
+                            {tech}
+                        </Badge>
+                    ))}
+                </div>
+                <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                    <li>• Contributed to maintaining the HR system across a microservices architecture using Nest.js, Angular, and MongoDB, ensuring scalability and performance.</li>
+                    <li>• Enhanced the recruitment module by transforming the approval process from a single-layer to a dynamic multi-layer approval system, improving flexibility and compliance. Additionally, implemented unit tests using Jest to ensure robustness and reliability.</li>
+                    <li>• Participated in the development of the time-attendance module using hexagonal architecture by implementing dynamic policy configurations to accommodate diverse organizational requirements, along with comprehensive Jest unit tests to validate functionality.</li>
+                    <li>• Learned and implemented Domain-Driven Development (DDD) principles across the project to create a more maintainable and scalable codebase by aligning technical implementations with business needs.</li>
+                    <li>• Collaborated with cross-functional teams to optimize microservice interactions, improving data consistency and reducing system downtime.</li>
+                    <li>• Conducted performance tuning and optimization of MongoDB queries to enhance system responsiveness, incorporating unit tests to validate query accuracy and efficiency.</li>
+                    <li>• Developed and maintained RESTful APIs to facilitate seamless communication between microservices and front-end applications, with Jest tests ensuring API stability and correctness.</li>
+                </ul>
+            </div>
+        </div>
+</div>
+ 
+    <div class="space-y-4 card-spacing">
+        <div class="card-gradient p-4 rounded-lg shadow-soft">
+            <div class="flex flex-col">
+                <h3 class="text-lg font-semibold">
+                    Web Developer</h3>
+                <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                    <p>Boneybone Ventures Sdn Bhd</p>
+                    <span>•</span>
+                    <p>Aug 2021 - Dec 2023</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    {["Laravel", "Vue.Js", "Microservices", "Mysql", "AWS","Runcloud"].map((tech) => (
+                        <Badge 
+                            variant="outline" 
+                            className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                        >
+                            {tech}
+                        </Badge>
+                    ))}
+                </div>
+                <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                    <li>• Utilized expertise in Laravel PHP, Vue.js, and MySQL to make significant contributions to the development of an ERP system consisting of PMO, CRM, BC, and HRMS modules.</li>
+                    <li>• Deployed web systems on AWS EC2 and DigitalOcean droplets, ensuring high availability, scalability, and fault tolerance for clients.</li>
+                    <li>• Effectively utilize Runcloud to efficiently manage the application and server, ensuring optimal performance, security, and smooth operations.</li>
+                    <li>• Designed and developed a dashboard that effectively displays sales and project data using Laravel, MySQL, and Vue.js.</li>
+                    <li>• Led a team of developers in developing and maintaining the system and utilizing Jira for streamlined project management and efficient workflow to ensure timely delivery of high-quality software.</li>
+                </ul>
+            </div>
+        </div>
+</div>
+    <div class="space-y-4 card-spacing">
+        <div class="card-gradient p-4 rounded-lg shadow-soft">
+            <div class="flex flex-col">
+                <h3 class="text-lg font-semibold">Technical Team Lead</h3>
+                <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                    <p>PRIMALCOM ENTEPRISE SDN BHD</p>
+                    <span>•</span>
+                    <p>Sept 2020 - Apr 2021</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    {["Python", "Node.Js", "Flask", "MongoDB", "AWS"].map((tech) => (
+                        <Badge 
+                            variant="outline" 
+                            className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                        >
+                            {tech}
+                        </Badge>
+                    ))}
+                </div>
+                <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                    <li>• Led the team in system development and technical support, ensuring seamless operation and high customer satisfaction.</li>
+                    <li>• Developed and maintained Rest API using Node.js with PM2 process manager.</li>
+                    <li>• Collected raw sales and inventory data, conducted data cleaning, and analysis using Python.
+                    </li>
+                    <li>• Developed modules for an e-commerce fulfillment system using Python Flask microservice for backend, HTML/CSS/Javascript for frontend, and MongoDB and MYSQL for database.</li>
+                    <li>• Deployed web system on AWS servers using Nginx for optimal performance and high availability.</li>
+                </ul>
+            </div>
+        </div>
+</div>
+<div class="space-y-4 card-spacing">
+        <div class="card-gradient p-4 rounded-lg shadow-soft">
+            <div class="flex flex-col">
+                <h3 class="text-lg font-semibold">Analyst Programmer</h3>
+                <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                    <p>SERBA DINAMIK IT SOLUTIONS SDN BHD</p>
+                    <span>•</span>
+                    <p>Apr 2020 - Sept 2020</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    {["Laravel", "Linux", "MySQL", "IPFS", "Node.Js"].map((tech) => (
+                        <Badge 
+                            variant="outline" 
+                            className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                        >
+                            {tech}
+                        </Badge>
+                    ))}
+                </div>
+                <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                    <li>• Worked with Laravel in the process of writing the code, ultimately resulting in a completed program.</li>
+                    <li>• Developed mobile applications within 3 months using an ionic framework.</li>
+                    <li>• Implemented the interplanetary file system(IPFS) for secure file storage in the system.
+                    </li>
+                    <li>• Pickup node.js and develop web API using node.js within 3 months.
+                    </li>
+                    <li>• Deployed the web system on the server using Nginx and apache with Ubuntu.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class="card-gradient p-4 rounded-lg shadow-soft">
+            <div class="flex flex-col">
+                <h3 class="text-lg font-semibold">Web Developer Intern</h3>
+                <div class="flex items-center gap-2 text-sm text-muted-foreground">
+                    <p>COOL CODE SDN BHD</p>
+                    <span>•</span>
+                    <p>Sept 2018 - Jan 2019</p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    {["Laravel", "Vue.js", "MySQL", "WordPress"].map((tech) => (
+                        <Badge 
+                            variant="outline" 
+                            className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                        >
+                            {tech}
+                        </Badge>
+                    ))}
+                </div>
+                <ul class="mt-2 text-sm text-muted-foreground space-y-1">
+                    <li>• Developed a web system using Laravel as the backend with Blade, Sass, and Vue.js for the frontend, and MySQL as the database.</li>
+                    <li>• Created and validated a software requirements specification and performed user acceptance testing.</li>
+                    <li>• Revamp and manage the company website using Wordpress.</li>
+                </ul>
+            </div>
+        </div>
+   
+</section>
