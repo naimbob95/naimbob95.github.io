@@ -1,0 +1,37 @@
+---
+import { Badge } from "@/components/ui/badge"
+const languages = ["JavaScript", "TypeScript", "PHP", "Python"];
+const technologies = ["Angular", "Vue.Js", "Node.js", "Nest.Js", "PostgreSQL", "Docker","Laravel"];
+---
+
+<section id="skills" class="py-6 md:py-8">
+    <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-2 text-center">Skills</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="card-gradient p-4 dotted-border">
+            <h3 class="text-base md:text-lg font-semibold mb-2">Languages</h3>
+            <div class="flex flex-wrap gap-2">
+                {languages.map((skill) => (
+                    <Badge 
+                        variant="outline" 
+                        className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                    >
+                        {skill}
+                    </Badge>
+                ))}
+            </div>
+        </div>
+        <div class="card-gradient p-4 dotted-border">
+            <h3 class="text-base md:text-lg font-semibold mb-2">Technologies</h3>
+            <div class="flex flex-wrap gap-2">
+                {technologies.map((skill) => (
+                    <Badge 
+                        variant="outline" 
+                        className="text-sm transition-all duration-300 hover:scale-110 hover:bg-accent/10 hover:border-accent/50 hover:shadow-glow cursor-pointer"
+                    >
+                        {skill}
+                    </Badge>
+                ))}
+            </div>
+        </div>
+    </div>
+</section>

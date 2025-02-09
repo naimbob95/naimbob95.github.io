@@ -1,29 +1,40 @@
+---
+const certificateItems = [
+  {
+    title: "AWS Certified Cloud Practitioner",
+    provider: "Amazon Web Services (AWS)",
+    dates: "2023 - 2026",
+    link: "https://www.credly.com/badges/c780afc4-183e-4ef7-8bb3-a7bd9c77da06/linked_in_profile"
+  }
+];
+---
+
 <section id="certificates" class="py-1 md:py-2">
-    <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Certificates</h2>
-    <div class="grid grid-cols-1 gap-4">
-        <div class="card-gradient p-4 rounded-lg shadow-soft">
-            <div class="flex flex-col space-y-4">
-                <div class="space-y-2">
-                    <h3 class="text-lg font-semibold">
-                        
-                            AWS Certified Cloud Practitioner
-                      
-                    </h3>
-                    <div class="flex items-center gap-2 text-sm text-muted-foreground">
-                        <p>Amazon Web Services (AWS)</p>
-                        <span>•</span>
-                        <p>2023 - 2026</p>
-                    </div>
-                    <a  
-                    href="https://www.credly.com/badges/c780afc4-183e-4ef7-8bb3-a7bd9c77da06/linked_in_profile"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-sm font-medium text-muted-foreground hover:text-accent underline-offset-4 hover:underline transition-all duration-200"
-                >
-                    View Credential →
-                </a>
-                </div>
+  <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Certificates</h2>
+  <div class="grid grid-cols-1 gap-4">
+    {certificateItems.map(item => (
+      <div class="card-gradient p-4 rounded-lg shadow-soft">
+        <div class="flex flex-col space-y-4">
+          <div class="space-y-2">
+            <h3 class="text-lg font-semibold">
+              {item.title}
+            </h3>
+            <div class="flex items-center gap-2 text-sm text-muted-foreground">
+              <p>{item.provider}</p>
+              <span>•</span>
+              <p>{item.dates}</p>
             </div>
+            <a  
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-medium text-muted-foreground hover:text-accent underline-offset-4 hover:underline transition-all duration-200"
+            >
+              View Credential →
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
+    ))}
+  </div>
 </section>
