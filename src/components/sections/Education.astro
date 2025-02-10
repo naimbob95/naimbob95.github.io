@@ -1,21 +1,8 @@
 ---
-const educationItems = [
-  {
-    title: "Bachelor of Computer Science (Software Engineering)",
-    institution: "Universiti Teknologi Malaysia",
-    dates: "2016 - 2020",
-    description: "Major in Software Engineering"
-  },
-  {
-    title: "Diploma in Information Technology (Programming)",
-    institution: "Politeknik Balik Pulau",
-    dates: "2013 - 2016",
-    description: "Major in Programming"
-  }
-];
+import { educationItems } from "../../userInformations";
 ---
 
-<section id="education" class="py-3 md:py-4">
+<section id="educations" class="py-3 md:py-4">
   <h2 class="text-xl md:text-2xl font-bold tracking-tighter mb-4 text-center">Education</h2>
   <div class="space-y-4">
     {educationItems.map(item => (

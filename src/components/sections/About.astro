@@ -5,7 +5,7 @@ import ProfileImage from "../../assets/profile.jpg"
 import { Image } from 'astro:assets';
 import { buttonVariants } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-
+import {userProfile} from "../../userInformations"
 ---
 
 <section id="about" class="py-2 md:py-6">
@@ -20,16 +20,16 @@ import { Badge } from "@/components/ui/badge"
             </div>
             <div class="space-y-1 md:space-y-2">
                 <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold tracking-tight gradient-text">
-                    Amirul Naim Bin Ahmad Nazri
+                    {userProfile.name}
                 </h1>
-                <h2 class="text-base md:text-lg text-accent font-medium">Software Engineer</h2>
+                <h2 class="text-base md:text-lg text-accent font-medium">{userProfile.role}</h2>
             </div>
             <p class="max-w-[600px] text-muted-foreground text-sm md:text-base">
-                Passionate about creating elegant solutions to complex problems.
+               {userProfile.description}
             </p>
             <div class="flex flex-wrap justify-center gap-2 md:gap-3 pt-3">
                <a 
-               href="https://github.com/naimbob95" 
+               href={userProfile.socials.github.link}
                 target="_blank" 
                 rel="noopener noreferrer"
                 class={buttonVariants({ variant: "outline" })}
@@ -38,7 +38,7 @@ import { Badge } from "@/components/ui/badge"
            
             </a>
             <a 
-            href="https://www.linkedin.com/in/amirul-naim-339a23b6/" 
+            href={userProfile.socials.linkedIn.link}
              target="_blank" 
              rel="noopener noreferrer"
              class={buttonVariants({ variant: "outline" })}
