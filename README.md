@@ -78,8 +78,8 @@ git push origin main
 
 can refer this for github pages deployment:
 
-[Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
-[Github Pages Quickstart](https://docs.github.com/en/pages/quickstart)
+- [Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/)
+- [Github Pages Quickstart](https://docs.github.com/en/pages/quickstart)
 
 
 ## Additional Information
