@@ -11,13 +11,14 @@ import Experience from "@/components/sections/Experience.astro"
 import Education from "@/components/sections/Education.astro"
 import Skill from "@/components/sections/Skill.astro"
 import Certificate from "@/components/sections/Certificate.astro"
+const menuItems = ["about", "experiences", "educations", "skills", "certificates"]
 ---
 
 <div class="container px-4 py-2 mx-auto max-w-6xl">
     <header class="fixed top-0 left-0 right-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <nav class="container flex items-center justify-center px-4 py-3 mx-auto max-w-6xl overflow-x-auto">
             <div class="flex items-center gap-6 md:gap-12">
-                {["about", "experience", "education", "skills"].map((item) => (
+                {menuItems.map((item) => (
                     <Button 
                         variant="ghost" 
                         size="sm" 
