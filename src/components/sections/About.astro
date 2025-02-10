@@ -1,11 +1,9 @@
 ---
-import { Button } from "@/components/ui/button"
 import { Github, Linkedin } from "lucide-react"
-import ProfileImage from "../../assets/profile.jpg"
 import { Image } from 'astro:assets';
 import { buttonVariants } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
 import {userProfile} from "../../userInformations"
+import {userImage} from "../../userInformations"
 ---
 
 <section id="about" class="py-2 md:py-6">
@@ -13,7 +11,7 @@ import {userProfile} from "../../userInformations"
         <div class="flex flex-col items-center text-center space-y-3 md:space-y-4">
             <div class="rounded-full bg-muted/50 p-2 ring-2 ring-accent/20 hover:ring-accent/40 transition-all">
                 <Image 
-                    src={ProfileImage}
+                    src={userImage}
                     alt="Profile"
                     class="w-64 h-64 rounded-full object-cover ring-1 ring-accent/10" 
                 />

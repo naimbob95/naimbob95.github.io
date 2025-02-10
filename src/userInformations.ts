@@ -1,4 +1,7 @@
 import type { CertificateItem, EducationItem, ExperienceItem, Profile, SkillItem } from "./types/userInformations.types";
+import ProfileImage from "./assets/profile.jpg";
+
+export const userImage = ProfileImage;
 
 export const userProfile : Profile = {
     name: "Amirul Naim Bin Ahmad Nazri", 

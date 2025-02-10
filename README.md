@@ -15,6 +15,20 @@ This project is a personal portfolio website built with Astro. It showcases sect
 - **src/assets/** – Additional media assets.
 - **README.md** – Project overview and instructions.
 
+## To Use the Project
+
+Update the relevant information in **src/userInformations.ts** for:
+- userProfile
+- experienceItems
+- educationItems
+- skillItem
+- certificateItems
+
+**Update Profile Image**: Replace the existing image at `src/assets/profile.jpg` with your own. If your image has a different format or filename, adjust the import path in `src/userInformations.ts` accordingly:
+
+```typescript
+import ProfileImage from './assets/your-image-filename.jpg';
+```
 ## Getting Started
 
 1. Clone the repository:
