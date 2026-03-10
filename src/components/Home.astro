@@ -1,23 +1,25 @@
 ---
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
-import { Github, Linkedin } from "lucide-react"
-import ProfileImage from "../assets/profile.jpg"
-import { Image } from 'astro:assets';
-import { buttonVariants } from "@/components/ui/button"
+import { Menu } from "lucide-react"
 import About from "@/components/sections/About.astro"
 import Experience from "@/components/sections/Experience.astro"
 import Education from "@/components/sections/Education.astro"
 import Skill from "@/components/sections/Skill.astro"
 import Certificate from "@/components/sections/Certificate.astro"
-const menuItems = ["about", "experiences", "educations", "skills", "certificates"]
+
+const menuItems = [
+    { id: "about", label: "About" },
+    { id: "experiences", label: "Experience" },
+    { id: "educations", label: "Education" },
+    { id: "skills", label: "Skills" },
+    { id: "certificates", label: "Certificates" },
+]
 ---
 
 <div class="container px-4 py-2 mx-auto max-w-6xl">
     <header class="fixed top-0 left-0 right-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <nav class="container flex items-center justify-center px-4 py-3 mx-auto max-w-6xl overflow-x-auto">
-            <div class="flex items-center gap-6 md:gap-12">
+        <nav class="container flex items-center justify-end px-4 py-3 mx-auto max-w-6xl md:justify-center">
+            <div class="hidden items-center gap-6 md:flex md:gap-12">
                 {menuItems.map((item) => (
                     <Button 
                         variant="ghost" 
@@ -25,16 +27,37 @@ const menuItems = ["about", "experiences", "educations", "skills", "certificates
                         asChild 
                         className="hover:bg-muted hover:text-accent transition-colors duration-200 min-w-fit"
                     >
-                        <a href={`#${item}`} class="text-xs md:text-sm font-medium tracking-wide uppercase whitespace-nowrap">
-                            {item}
+                        <a href={`#${item.id}`} class="text-sm font-medium tracking-wide uppercase whitespace-nowrap">
+                            {item.label}
                         </a>
                     </Button>
                 ))}
             </div>
+
+            <details class="relative md:hidden" data-mobile-nav>
+                <summary class="flex cursor-pointer list-none items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-sm font-medium text-foreground shadow-sm transition-colors hover:bg-muted [&::-webkit-details-marker]:hidden">
+                    <Menu className="size-4" />
+                    Menu
+                </summary>
+
+                <div class="absolute right-0 top-[calc(100%+0.75rem)] w-52 rounded-xl border border-border bg-background/95 p-2 shadow-lg backdrop-blur">
+                    <div class="flex flex-col gap-1">
+                        {menuItems.map((item) => (
+                            <a
+                                href={`#${item.id}`}
+                                class="rounded-md px-3 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted hover:text-accent"
+                                data-mobile-nav-link
+                            >
+                                {item.label}
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </details>
         </nav>
     </header>
 
-    <main class="pt-14">
+    <main class="pt-16 md:pt-14">
         <About />
         <Experience />
         <Education />
@@ -58,6 +81,14 @@ const menuItems = ["about", "experiences", "educations", "skills", "certificates
 
     document.querySelectorAll('.timeline-item').forEach((item) => {
         observer.observe(item);
+    });
+
+    const mobileNav = document.querySelector('[data-mobile-nav]') as HTMLDetailsElement | null;
+
+    document.querySelectorAll('[data-mobile-nav-link]').forEach((link) => {
+        link.addEventListener('click', () => {
+            mobileNav?.removeAttribute('open');
+        });
     });
 </script>
 
